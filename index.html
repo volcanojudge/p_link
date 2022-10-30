@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>p_link - Write & Save Problems Using Eruption.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Garamond, serif;
+  margin-left: 12px;
+}
+a {
+  color: black;
+}
+</style>
+</head>
+
+<body>
+
+<div style="position: fixed; margin-left: 12px">
+<h1>p_link</h1>
+<h3>Submit contest problems using a p_link.</h3>
+<h4>Please use Eruption when making problems.</h4>
+<a href="https://plink.pythonanywhere.com/problem/8890858426611" target="_blank">Example Usage of Eruption</a><br><br>
+<span>Volcano Judge &copy 2022 volcano.</span>
+</div>
+
+<center><form action="https://plink.pythonanywhere.com/create-plink" method="POST">
+<h1>Eruption Editor</h1>
+<textarea name="problem" style="width: 800px; height: 600px" required>!title This is how you make the problem title. title!!newline!Now just add a bunch of text for the problem statement...!newline!If you have variables, put them between brackets. example: ((N)) and ((K)). Don't do this for numbers though.!newline!!constraints Constraints constraints!!newline!1!lessthanequalto!((N))!lessthanequalto!10^6!newline!2!lessthanequalto!((K))!lessthanequalto!10^5!newline!!newline!!subtask Subtask 1 [x%] subtask!!newline!1!lessthanequalto!((N))!lessthanequalto!1000!newline!!newline!!subtask Subtask 2 [y%] subtask!!newline!No additional constraints.!newline!!newline!!sample Sample Input sample!!newline!!!!your sample input here!!!!newline!!newline!!sample Sample Output sample!!newline!!!!your sample output here!!!!newline!!newline!!sample Sample Explanation sample!!newline!your explanation here</textarea>
+<br><h4>You must now add 3 valid test cases and their outputs.</h4>
+<textarea name="tc1" style="width: 800px; height: 300px" required>Test Case #1</textarea><br>
+<textarea name="o1" style="width: 800px; height: 300px" required>Output #1</textarea><br>
+<textarea name="tc2" style="width: 800px; height: 300px" required>Test Case #2</textarea><br>
+<textarea name="o2" style="width: 800px; height: 300px" required>Output #2</textarea><br>
+<textarea name="tc3" style="width: 800px; height: 300px" required>Test Case #3</textarea><br>
+<textarea name="o3" style="width: 800px; height: 300px" required>Output #3</textarea><br>
+<h4>Publish the p_link when you're done and add it to the Volcano Judge contest creation section.</h4>
+<h4>Note that the unnecessary usage of p_link will result in a ban, and it should only be used for contest creation.</h4>
+<input style="width: 300px; font-family: Garamond, serif; font-size: 32px; background-color: white" type="submit" value="Publish p_link"><br><br>
+</form></center>
+</body></html>
